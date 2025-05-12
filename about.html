@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Sweet Recipes</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍰</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Short+Stack&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="cute-navbar">
+        <div class="nav-container">
+            <div class="nav-logo">🍰 Sweet Recipes</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-hamburger">☰</div>
+        </div>
+    </nav>
+
+    <div class="about-container">
+        <header class="about-header">
+            <h1>Our Sweet Story 🍭</h1>
+            <p>Baking happiness one recipe at a time!</p>
+            <div class="stars-divider">✦ ✦ ✦</div>
+        </header>
+
+        <div class="about-content">
+            <div class="about-image">
+                <img src="team.jpg" alt="Our baking team" class="team-photo">
+                <div class="image-caption">Our happy baking team!</div>
+            </div>
+            
+            <div class="about-text">
+                <h2>🌸 How We Started</h2>
+                <p>It all began in a tiny pink kitchen in 2023 when i decided to share my grandmother's secret cupcake recipes with the world. What started as a hobby blog quickly grew into a sweet community of baking enthusiasts.</p>
+                
+                <h2>🍪 Our Philosophy</h2>
+                <p>We believe baking should be fun, forgiving, and full of love! Our recipes are tested to be beginner-friendly while still impressing seasoned bakers. Every recipe comes with our signature "sweet tips" to guarantee delicious results.</p>
+                
+                <div class="mission-box">
+                    <h3>Our Sweet Mission</h3>
+                    <p>"To spread joy through approachable, adorable recipes that make everyone feel like a master baker!"</p>
+                    <div class="heart-float">💗</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-section">
+            <h2>Meet Our Bakers ✨</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-pic" style="background-color: #ffcce0;">🍓</div>
+                    <h3>Ranim Naat (Me)</h3>
+                    <p>Head Baker</p>
+                    <p>Specialty: Cupcakes</p>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-pic" style="background-color: #e8a0bf;">🍫</div>
+                    <h3>Rayen Naat (my bro)</h3>
+                    <p>Pastry Chef</p>
+                    <p>Specialty: Chocolate</p>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-pic" style="background-color: #b784d1;">🍋</div>
+                    <h3>Faten Selmi (Mom)</h3>
+                    <p>Recipe Tester</p>
+                    <p>Specialty: Citrus</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fun-facts">
+            <h2>Sweet Facts About Us 🌈</h2>
+            <div class="facts-grid">
+                <div class="fact-card">
+                    <div class="fact-number">500+</div>
+                    <p>Recipes tested</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-number">1M</div>
+                    <p>Cups of flour used</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-number">10k</div>
+                    <p>Happy bakers</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-number">24/7</div>
+                    <p>Sweet tooth service</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="cute-footer">
+        <div class="footer-content">
+            <div class="footer-logo">Our socials :</div>
+            <div class="footer-social">
+                <a href="#" class="social-icon">📷</a>
+                <a href="#" class="social-icon">👍</a>
+                <a href="#" class="social-icon">🐦</a>
+                <a href="#" class="social-icon">📌</a>
+            </div>
+
+            <div class="footer-copyright">© 2025 My Sweet Recipes. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.querySelector('.nav-hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            
+            if (navLinks.classList.contains('active')) {
+                hamburger.textContent = '✕';
+            } else {
+                hamburger.textContent = '☰';
+            }
+        });
+    </script>
+</body>
+</html>

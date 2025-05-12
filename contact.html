@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Sweet Recipes</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍰</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Short+Stack&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="cute-navbar">
+        <div class="nav-container">
+            <div class="nav-logo">🍰 Sweet Recipes</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-hamburger">☰</div>
+        </div>
+    </nav>
+
+    <div class="contact-container">
+        <header class="contact-header">
+            <h1>💌 Sweet Talk to Us!</h1>
+            <p>We'd love to hear your sweet thoughts and recipe ideas!</p>
+            <div class="hearts-divider">💖 💖 💖</div>
+        </header>
+
+        <div class="contact-content">
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="e.g. Sugar Plum" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="e.g. yum@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="recipe">Recipe Idea</option>
+                            <option value="question">Baking Question</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Sweet Message</label>
+                        <textarea id="message" name="message" placeholder="Type your message here..." rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message 🍬</button>
+                </form>
+            </div>
+            
+            <div class="contact-info">
+                <div class="info-card">
+                    <h3>📮 Visit Us</h3>
+                    <p>123 Sugar Lane<br>Cakeville, CV 98765</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>📞 Call Us</h3>
+                    <p>(216) 20-000-000<br>Mon-Fri: 9am-5pm</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>✉️ Email Us</h3>
+                    <p>hello@sweetrecipes.com<br>recipes@sweetrecipes.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="cute-footer">
+        <div class="footer-content">
+            <div class="footer-logo">Our socials :</div>
+            <div class="footer-social">
+                <a href="#" class="social-icon">📷</a>
+                <a href="#" class="social-icon">👍</a>
+                <a href="#" class="social-icon">🐦</a>
+                <a href="#" class="social-icon">📌</a>
+            </div>
+            
+            <div class="footer-copyright">© 2025 My Sweet Recipes. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.querySelector('.nav-hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            
+            if (navLinks.classList.contains('active')) {
+                hamburger.textContent = '✕';
+            } else {
+                hamburger.textContent = '☰';
+            }
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your sweet message! We\'ll get back to you soon. 🍰');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
